@@ -47,7 +47,7 @@ const Data = () => {
           </div>
         </div>
       )}
-      {StateData.query && StateData.totalRecord != 0 ? (
+      {StateData.query && StateData.totalRecord != 0 && StateData.totalRecord >= 30 ? (
         <ReactPaginate
           previousLabel={<>&laquo;</>}
           nextLabel={<>&raquo;</>}
